@@ -31,7 +31,7 @@ body {
     position: absolute;
     width: 200%;
     height: 200%;
-    background: url('/docs/public/assets/logo/Aether.png') repeat;
+    background: url('public/assets/logo/Aether.png') repeat;
     opacity: 0.006;
     animation: floatingBg 60s linear infinite;
 }
