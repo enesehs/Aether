@@ -31,7 +31,7 @@ body {
     position: absolute;
     width: 200%;
     height: 200%;
-    background: url('/public/assets/Aether.png') repeat;
+    background: url('/docs/public/assets/logo/Aether.png') repeat;
     opacity: 0.006;
     animation: floatingBg 60s linear infinite;
 }
@@ -113,6 +113,7 @@ header {
     position: relative;
 }
 .welcome {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,15 +135,12 @@ header {
     width: min(300px, 30vw);
     transform: translateX(-50%);
     left: 64%;
-    top: 9.5%;
+    top: 34%;
     height: auto;
     opacity: 0.8;
     transition: transform 0.3s ease;
 }
 
-.welcome img#brush:hover {
-    transform: translateX(-50%) scale(1.05);
-}
 
 .welcome p {
     width: 100%;
@@ -158,7 +156,7 @@ header {
     width: min(100px, 15vw);
     left: 37%;
     transform: translateX(-50%);
-    top: 14.5%;
+    top: 64%;
     height: auto;
     opacity: 0.8;
 }
@@ -221,7 +219,7 @@ img#scroll{
     left: 50%;
     transform: translateX(-50%);
     filter: invert(1);
-    top: 620px;
+    top: 500px;
     height: auto;
     opacity: 1;
 }
@@ -231,7 +229,7 @@ img#scroll{
 .githubcorner {
     position: absolute;
     left: 20px;
-    top: 600px;
+    top: 500px;
     text-decoration: none;
     padding: 12px 16px;
     border: solid 1px rgba(255, 255, 255, 0.2);

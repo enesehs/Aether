@@ -10,9 +10,10 @@ window.addEventListener("scroll", () => {
         }
     } else {
         header.style.opacity = "1";
+        header.style.pointerEvents = "all";
         if (githubCorner) {
             githubCorner.style.opacity = "1";
-            githubCorner.style.pointerEvents = "auto";
+            githubCorner.style.pointerEvents = "all";
         }
     }
 });
