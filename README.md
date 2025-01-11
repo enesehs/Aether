@@ -6,12 +6,12 @@
 
 # Aether: Your Digital Webcam Sentinel
 
-Aether is a open-source security application that automatically captures and encrypts webcam activity during system access. With its zero-cloud architecture and robust encryption, it ensures maximum privacy by operating completely offline. Perfect for both personal and enterprise use, Aether provides detailed event logging while maintaining absolute data sovereignty through secure local storage.
+Aether is a open-source security application that automatically captures and encrypts webcam activity during system access. With its capture encryption, it ensures maximum privacy by operating completely offline. Perfect for both personal and enterprise use, Aether provides detailed capture logging. 
 
 ## Key Features
 - 🔒 **Local Security**: Automated photo capture during login with secure local storage
-- 🛡️ **Enterprise-grade Encryption**: Military-standard encryption for data protection
-- 💾 **Zero-Cloud Storage**: Completely offline operation with no external data transmission
+- 🛡️ **Encryption**: Encryption for capture protection
+- 💾 **%100 Private**: Completely offline operation with no external data transmission
 - 📝 **Event Logging**: Detailed activity tracking for complete transparency
 - ⚙️ **Full Customization**: Comprehensive control over privacy and security settings
 - 🔐 **Data Sovereignty**: Complete control over your data with local-only storage
