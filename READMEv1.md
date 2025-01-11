@@ -1,23 +1,25 @@
 
 <p align="center">
-  <img src="docs/public/assets/logo/logo.png" style="display: block; margin: 0 auto;" width="700"/>
+  <img src="docs/public/assets/logo/readmelogo.png" style="display: block; margin: 0 auto;" width="700"/>
 </p>
+
+
+> Note: Aether is still in development and is now in *pre-release*.
 
 # Aether: Your Digital Webcam Sentinel
 
-Aether is an open-source software designed with privacy in mind. It logs computer logins, captures images, and encrypts and stores them locally. Aether ensures complete privacy by not transmitting any data or metadata, operating entirely on your local machine.
+Aether is an open-source software designed with privacy in mind. It logs every step and captures webcam pictures, and encrypts and stores them locally. Aether ensures complete privacy by not transmitting any data or metadata, operating entirely on your local machine.
 
-> Note: Aethr is still in development and is now in *pre-release*.
+
 
 ## Features
-
 - **Secure Local Capture**: Automatically captures photos during login and stores them securely on your local machine.
 - **Advanced Encryption**: Strong encryption ensures your data remains private and protected.
 - **Private Data Storage**: No data is transmitted; all information is stored locally with no external servers involved.
-- **Comprehensive Activity Logging**: Track all application events and actions for complete transparency.
+- **Comprehensive Activity Logging**: Track capture events and actions for complete transparency.
 - **Fully Customizable Settings**: Control your privacy and security settings, and configure the application to suit your needs.
 
-## Detailed Features
+## Detailed Installation 
 
 ### Camera Configuration
 - **Choose Camera**: Select your preferred camera from the available list.
@@ -41,13 +43,9 @@ Aether is an open-source software designed with privacy in mind. It logs compute
 ### Advanced Settings
 - **Task Scheduler**: Customize Aether’s behavior using Task Scheduler. You can set conditions, such as starting the capture process when a specific application is launched.
 
-### Known Issues
-- **Encryption Only Mode**: If only encryption is enabled in the config, images will neither be encrypted nor compressed.
-- **Splash Screen Delay**: A brief delay after the splash screen is normal due to the OpenCV camera detection process.
-
 ## Installation
 
-1. **Download**: Get the latest version from the [releases](https://github.com/enesehs/aether/releases) page. or download at [Aether Website](https://enesehs.me/Aether) 
+1. **Download**: Get the latest version from the [releases](https://github.com/enesehs/aether/releases) page or download at [Aether Website](https://enesehs.me/Aether) 
 2. **Install**: Install `AetherSetup.exe` Choose install location and launch
 3. **Run**: Launch Aether by running `Aether.exe`. as Administrator
 
@@ -58,12 +56,19 @@ Aether is an open-source software designed with privacy in mind. It logs compute
 3. **Activate Capture**: Enable the auto-start feature and configure the encryption and compression settings.
 4. **Start Logging**: The app will automatically capture and log events as configured.
 
+
+## Known Bugs
+
+- **Encryption Only Mode**: If only encryption is enabled in the config, images will neither be encrypted nor compressed.
+- **Splash Screen Delay**: A brief delay after the splash screen is normal due to the OpenCV camera detection process.
+- **Run as Administrator**: If you dont run as administrator `Aether.exe` errors at auto-run
+
 ## Contact
 
-For feedback, bug reports, or support, contact [enesehs@protonmail.com](mailto:enesehs@protonmail.com).
+For feedback, bug reports, or support, contact me [enesehs](enesehs.me).
 
 ## License
 
-Aether is licensed under the [GNU 4](LICENSE).
+Aether is licensed under the [GNU General Public License v3.0](LICENSE).
 
 
