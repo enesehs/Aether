@@ -18,7 +18,7 @@ Aether is an open-source application designed to enhance privacy by automaticall
 - 🚀 **Lightweight Performance**: Runs efficiently with minimal impact on system resources.
 - 🎯 **User-Friendly**: Simple setup and intuitive interface.
 
-## Getting Started
+## Getting Started [Install Tutorial](https://www.youtube.com/watch?v=F2RvnRn0ZeM)
 1. Download Aether from [Releases](https://github.com/enesehs/aether/releases) or the [Aether Website](https://enesehs.me/Aether).
 2. Run `AetherSetup.exe` to install.
 3. Launch `Aether.exe` with Administrator privileges and complete the setup wizard.
