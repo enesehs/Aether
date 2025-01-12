@@ -2,86 +2,72 @@
   <img src="docs/public/assets/logo/readmelogo.png" alt="Aether Logo" width="700"/>
 </p>
 
-> **Note**: Aether is currently in pre-release development phase.
+> **Note**: Aether is currently in the pre-release development phase.
 
 # Aether: Your Digital Webcam Sentinel
 
-Aether is a open-source security application that automatically captures and encrypts webcam activity during system access. With its capture encryption, it ensures maximum privacy by operating completely offline. Perfect for both personal and enterprise use, Aether provides detailed capture logging. 
+Aether is an open-source application designed to enhance privacy by automatically capturing and securely storing webcam activity during system access. It operates entirely offline to ensure your data remains private. Whether for personal or professional use, Aether provides detailed activity tracking with user-friendly customization options.
 
-## Key Features
-- 🔒 **Local Security**: Automated photo capture during login with secure local storage
-- 🛡️ **Encryption**: Encryption for capture protection
-- 💾 **%100 Private**: Completely offline operation with no external data transmission
-- 📝 **Event Logging**: Detailed activity tracking for complete transparency
-- ⚙️ **Full Customization**: Comprehensive control over privacy and security settings
-- 🔐 **Data Sovereignty**: Complete control over your data with local-only storage
-- 🚀 **High Performance**: Optimized for minimal system impact
-- 🎯 **User-Focused**: Intuitive interface and seamless operation
+## Features
+- 🔒 **Local Security**: Automatically captures photos during login and stores them securely on your device.
+- 🛡️ **Secure Storage**: Protects your captured images with encryption.
+- 💾 **Offline Operation**: Works without sending any data to external servers.
+- 📝 **Activity Logs**: Keeps a detailed record of captures and events for transparency.
+- ⚙️ **Customizable Settings**: Offers flexible privacy and security controls.
+- 🔐 **Data Ownership**: All data is stored locally, giving you full control.
+- 🚀 **Lightweight Performance**: Runs efficiently with minimal impact on system resources.
+- 🎯 **User-Friendly**: Simple setup and intuitive interface.
 
-## Quick Installation
-1. Download from [releases](https://github.com/enesehs/aether/releases) or [Aether Website](https://enesehs.me/Aether)
-2. Run `AetherSetup.exe`
-3. Launch `Aether.exe` as Administrator and configure settings
-4. Complete initial setup wizard
+## Getting Started
+1. Download Aether from [Releases](https://github.com/enesehs/aether/releases) or the [Aether Website](https://enesehs.me/Aether).
+2. Run `AetherSetup.exe` to install.
+3. Launch `Aether.exe` with Administrator privileges and complete the setup wizard.
 
-## Detailed Setup Guide
-### Camera Setup
-- Select preferred camera device
-- Perform camera test and calibration
-- Save camera configuration
-- Adjust image quality settings
-- Configure capture timing
+## Configuration Guide
 
-### Storage Configuration
-- Default path: User/Pictures/Aether
-- Custom location selection available
-- Secure storage preferences
-- Backup location settings
-- Storage quota management
+### Camera Settings
+- Choose your preferred camera device.
+- Test and calibrate the camera.
+- Set image quality and capture timing.
 
-### Security Settings
-- Automatic startup on login
-- Password-protected encryption
-- Image compression options
-- Comprehensive event logging
-- Access control settings
-- Multi-factor authentication support
+### Storage Options
+- Default save path: `User/Pictures/Aether`.
+- Customize the storage location if desired.
+- Set preferences for secure storage and backups.
 
-### Password Guidelines
-- Default password is `1`
-- Password must not contain non-ASCII characters (ü,ğ,ş,ı,é,α,β etc.)
-- If your file is already encrypted, delete the old file before setting a new password
-- Use different passwords for different files to enhance security
+### Security Configuration
+- Enable automatic startup on login.
+- Protect your data with a password.
+- Adjust compression settings for images.
+- Enable detailed activity logging.
+- Configure access control for enhanced security.
 
-### Advanced Options
-- Custom Task Scheduler integration
-- Event-based capture triggers
-- Flexible automation settings
-- System resource management
-- Network isolation controls
-- Debug logging options
+### Password Notes
+- The default password is `1`. Update it for better security.
+- Avoid using non-ASCII characters in passwords,(e.g, ü, é, ö, ø, â etc.)
+- If changing passwords, delete old encrypted files beforehand.
+- Use unique passwords for different files to enhance protection.
 
-## Current Issues
-- ⚠️ Encryption-only mode functionality issues
-- ⚠️ Expected splash screen delay during camera detection
-- ⚠️ Administrator privileges required for auto-run
-- ⚠️ Limited support for legacy hardware
+### Advanced Features
+- Integration with Task Scheduler for custom automation.
+- Event-based triggers for capturing.
+- Debug logging for troubleshooting.
+
+## Known Issues
+- Some issues with the "encryption-only" mode.
+- Splash screen delays during camera detection.
+- Administrator privileges required for auto-run.
+- Compatibility limitations with older hardware.
 
 ## Support and Community
-
-Need help? We're here for you:
-- Contact [enesehs](https://enesehs.me)
-- Report issues on [GitHub](https://github.com/enesehs/aether/issues)
-- Buy me a coffee [Buy me a coffee](https://buymeacoffee.com/enesehs)
-- Contact me on Linkedin [Linkedin](https://www.linkedin.com/in/enesehs/)
-
+We’re here to help:
+- Contact: [enesehs](https://enesehs.me)
+- Report issues: [GitHub Issues](https://github.com/enesehs/aether/issues)
+- Support us: [Buy me a coffee](https://buymeacoffee.com/enesehs)
+- Connect on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/enesehs/)
 
 ## License
-
-Licensed under [GNU General Public License v3.0](LICENSE)
+Aether is licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-
+We welcome contributions! Check out our [Contributing Guidelines](CONTRIBUTING.md) to get started.
