@@ -1,12 +1,12 @@
 @font-face {
-    font-family:"MonaSansExpanded";
-    src:url(/docs/public/assets/font/MonaSansExpanded-Regular.woff2) format("woff2"),url(/docs/public/assets/font/MonaSansExpanded-Regular.woff) format("woff"),url(/public/assets/font/MonaSansExpanded-Regular.ttf) format("truetype")
-    }
-    
-@font-face {
-    font-family:"MonaSansMedium";
-    src:url(/docs/public/assets/fonts/MonaSansExpanded-Regular.woff2) format("woff2"),url(/docs/public/assets/font/MonaSans-Medium.woff) format("woff"),url(/public/assets/font/MonaSans-Medium.ttf) format("truetype")
-    }
+    font-family: 'Mona Sans Expanded';
+    src: url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff2') format('woff2'),
+         url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff') format('woff'),
+         url('/docs/public/assets/fonts/MonaSansExpanded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Global Styles */
 * {
@@ -164,12 +164,12 @@ header {
 
 .welcome img#line {
     position: relative;
-    width: min(100px, 15vw);
+    width: min(90px, 15vw);
     left: -150px;
     transform: translateX(-50%) translateY(-50%);
     top: -95px;
     height: auto;
-    opacity: 0.8;
+    opacity: 0.95;
     z-index: 2;
 }
 
@@ -182,11 +182,12 @@ header {
     opacity: 0.9;
     letter-spacing: 0.5px;
 }
-
-
-.welcome img#win,
-.welcome img#lnx,
-.welcome img#mac {
+.welcome .os-icons{
+    display: inline-block;
+}
+.welcome .os-icons img#win,
+.welcome .os-icons img#lnx,
+.welcome .os-icons img#mac {
     position: relative;
     top: -120px;
     width: 40px;
@@ -195,27 +196,10 @@ header {
     cursor: pointer;
     margin: 0 10px;
     transition: .6s;
-    animation: swim 20s infinite ease-in-out;
 }
-@keyframes swim {
-    0% {
-        transform: translateY(0) rotate(0deg) scale(1);
-    }
-    25% {
-        transform: translateY(-5px) rotate(5deg) scale(1.05);
-    }
-    50% {
-        transform: translateY(0px) rotate(0deg) scale(1.1);
-    }
-    75% {
-        transform: translateY(-5px) rotate(-5deg) scale(1.05);
-    }
-    100% {
-        transform: translateY(0) rotate(0deg) scale(1);
-    }
-}
-.welcome img#win:hover,#lnx:hover,#mac:hover{
-opacity: 0.6;
+
+.welcome img#win:hover, .welcome img#lnx:hover, .welcome img#mac:hover{
+    opacity: 0.6 !important;
 }
 
 img#scroll{
@@ -233,12 +217,14 @@ img#scroll{
 
 .githubcorner {
     position: absolute;
-    left: 20px;
+    width: 200px;
+    height: 40px;
+    left: -20px;
     top: 500px;
     text-decoration: none;
     padding: 12px 16px;
     border: solid 1px rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
+    border-radius: 45px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     transform-origin: center;
@@ -246,38 +232,38 @@ img#scroll{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
 }
 
 .githubcorner img {
     filter: invert(1);
     opacity: 0.8;
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: auto;
     transition: all 0.3s ease;
+    margin: -5px 0 0 120px;
 }
 
 .githubcorner p {
-    top:0px;
+    position: relative;
     color: white;
     font-size: 14px;
     opacity: 0.8;
-    margin: 0;
+    margin: 60px 0 0 -20px;
     transition: all 0.3s ease;
 }
 
 .githubcorner:hover {
-    transform: translateY(-5px) scale(1.05);
     border-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+
 .githubcorner:hover img,
 .githubcorner:hover p {
     opacity: 1;
-    transform: scale(1.1);
+    transform: translateX(3px);
 }
-
 
 
 

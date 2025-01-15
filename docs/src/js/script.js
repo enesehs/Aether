@@ -125,4 +125,9 @@ if (!document.querySelector('#heart-animation')) {
         showMessage("We are sorry, Linux port is under development.");
         });
     });
-    
+
+    // Download for Windows
+    document.getElementById("win").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "https://github.com/enesehs/Aether/releases/download/v0.1-pre-release/AetherSetup.exe";
+    });

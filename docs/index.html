@@ -45,10 +45,12 @@
 
 
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <title>Aether - Your Digital Webcam Sentinel</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <link rel="preconnect" href="https://fonts.cdnfonts.com">
+    <link href="https://fonts.cdnfonts.com/css/mona-sans-expanded" rel="stylesheet">    
 </head>
-
 <body>
     <div class="background-elements">
         <div class="floating-logo"></div>
@@ -66,14 +68,20 @@
     <section class="welcome">
         <h1>Welcome to Aether</h1>
         <img id="brush" src="public/assets/img/brush.png">
-        <p>Your Digital Webcam Sentinel</p>
+        <p id="title">Your Digital Webcam Sentinel</p>
         <img id="line" src="public/assets/img/line.png">
         <p class="dw">Download for </p>
-        <a href="https://github.com/enesehs/Aether/releases/download/v0.1-pre-release/AetherSetup.exe" download ><img id="win" src="public/assets/icons/windows.png"></a>
-        
-        <img id="lnx" src="public/assets/icons/linux.png">
-        <img id="mac" src="public/assets/icons/mac.png">
-
+        <div class="icons">
+            <div class="os-icons">
+                <img id="win" src="public/assets/icons/windows.png" alt="Windows">
+            </div>
+            <div class="os-icons">
+                <img id="lnx" src="public/assets/icons/linux.png" alt="Linux">
+            </div>
+            <div class="os-icons">
+                    <img id="mac" src="public/assets/icons/mac.png" alt="macOS">
+            </div>
+        </div>
         <img id="scroll" src="public/assets/img/drag.gif" draggable="false">
 
         <a href="https://github.com/enesehs/aether" class="githubcorner">
@@ -218,6 +226,43 @@
         reset: false,
         viewFactor: 0.2
     };
+    ScrollReveal().reveal('.welcome h1, #brush', {
+        ...revealOptions,
+        origin: 'left',
+        delay: 200,
+        scale: 0.85,
+        opacity: 0
+    });
+    ScrollReveal().reveal('.welcome #title, #line', {
+        ...revealOptions,
+        origin: 'right',
+        delay: 500,
+    });
+    ScrollReveal().reveal('.welcome .dw', {
+        ...revealOptions,
+        origin: 'bottom',
+        delay: 700,
+        interval: 200
+    });
+    ScrollReveal().reveal('.icons .os-icons', {
+        ...revealOptions,
+        origin: 'right',
+        delay: 1000,
+        interval: 200,
+    });
+    ScrollReveal().reveal('.githubcorner', {
+        ...revealOptions,
+        origin: 'left',
+        delay: 2000,
+        interval: 200,
+        distance: '200px',
+        reset: true
+    });
+    ScrollReveal().reveal('.welcome #scroll', {
+        ...revealOptions,
+        origin: 'bottom',
+        delay: 3300,
+    });
 
     ScrollReveal().reveal('.features h2', {
         ...revealOptions,
@@ -228,7 +273,10 @@
         origin: 'bottom',
         interval: 200
     });
-
+    ScrollReveal().reveal('.Support h2', {
+        ...revealOptions,
+        origin: 'left'
+    });
     ScrollReveal().reveal('.Support .card', {
         ...revealOptions,
         origin: 'right',
@@ -236,12 +284,18 @@
         interval: 200,
         opacity: 0
     });
-
+    ScrollReveal().reveal('.Download h2', {
+        ...revealOptions,
+        origin: 'left'
+    });
     ScrollReveal().reveal('.Download .card', {
         ...revealOptions,
         origin: 'bottom',
-        scale: 0.6,
-        distance: '0px'
+        delay: 400,
+        interval: 300,
+        distance: '100px',
+        scale: 0.4,
+        opacity: 0
     });
 </script>
 </html>
