@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 
 let cards = document.querySelectorAll('.card');
 cards.forEach(card => {
-    card.onmousemove = function(e){
+    card.onmousemove = function (e) {
         let x = e.pageX - card.offsetLeft;
         let y = e.pageY - card.offsetTop;
 
@@ -38,13 +38,13 @@ cards.forEach(card => {
     }
 })
 
-document.querySelector('header a[title="Support"]').addEventListener('click', function(e) {
+document.querySelector('header a[title="Support"]').addEventListener('click', function (e) {
     const createHeart = () => {
         const heart = document.createElement('div');
         const size = Math.random() * 25 + 15; // More varied sizes
         const duration = Math.random() * 2 + 1; // More varied durations
         const symbols = ['❤️', '💖', '💝', '💗', '💓']; // Different heart styles
-        
+
         heart.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
         heart.style.cssText = `
             position: fixed;
@@ -58,7 +58,7 @@ document.querySelector('header a[title="Support"]').addEventListener('click', fu
             pointer-events: none;
             will-change: transform, opacity;
         `;
-        
+
         document.body.appendChild(heart);
         setTimeout(() => heart.remove(), duration * 1000); // Clean up based on duration
     };
@@ -87,9 +87,9 @@ if (!document.querySelector('#heart-animation')) {
 }
 
 
-    function showMessage(message) {
-        const messageDiv = document.createElement("div");
-        Object.assign(messageDiv.style, {
+function showMessage(message) {
+    const messageDiv = document.createElement("div");
+    Object.assign(messageDiv.style, {
         fontFamily: "Mona Sans Expanded",
         position: "fixed",
         bottom: "20px",
@@ -103,31 +103,31 @@ if (!document.querySelector('#heart-animation')) {
         zIndex: "1000",
         opacity: "0",
         transition: "opacity 0.5s ease-in-out",
-        });
-        messageDiv.textContent = message;
-        document.body.appendChild(messageDiv);
-        setTimeout(() => { messageDiv.style.opacity = "1"; }, 100);
-        setTimeout(() => {
+    });
+    messageDiv.textContent = message;
+    document.body.appendChild(messageDiv);
+    setTimeout(() => { messageDiv.style.opacity = "1"; }, 100);
+    setTimeout(() => {
         messageDiv.style.opacity = "0";
         setTimeout(() => { document.body.removeChild(messageDiv); }, 500);
-        }, 3000);
-    }
-    
-    ["mac"].forEach(id => {
-        document.getElementById(id).addEventListener("click", function(event) {
+    }, 3000);
+}
+
+["mac"].forEach(id => {
+    document.getElementById(id).addEventListener("click", function (event) {
         event.preventDefault();
         showMessage("We are sorry, MacOS port is under development.");
-        });
     });
-    ["lnx"].forEach(id => {
-        document.getElementById(id).addEventListener("click", function(event) {
+});
+["lnx"].forEach(id => {
+    document.getElementById(id).addEventListener("click", function (event) {
         event.preventDefault();
         showMessage("We are sorry, Linux port is under development.");
-        });
     });
+});
 
-    // Download for Windows
-    document.getElementById("win").addEventListener("click", function(event) {
-        event.preventDefault();
-        window.location.href = "https://github.com/enesehs/Aether/releases/download/v0.1-pre-release/AetherSetup.exe";
-    });
+// Download for Windows
+document.getElementById("win").addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.href = "https://github.com/enesehs/Aether/releases/download/v0.1-pre-release/AetherSetup.exe";
+});

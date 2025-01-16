@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Mona Sans Expanded';
     src: url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff2') format('woff2'),
-         url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff') format('woff'),
-         url('/docs/public/assets/fonts/MonaSansExpanded-Regular.ttf') format('truetype');
+        url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff') format('woff'),
+        url('/docs/public/assets/fonts/MonaSansExpanded-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,7 +20,7 @@
 body {
     color: #ffffff;
     position: relative;
-    height:180vh;
+    height: 180vh;
     overflow-x: hidden;
 }
 
@@ -34,13 +34,14 @@ body {
     background: linear-gradient(45deg, #1a1a2e, #16213e, #1a1a2e, #16213e);
     overflow: hidden;
 }
+
 .background-elements::before {
     content: '';
     position: absolute;
     width: 200%;
     height: 200%;
     background: url('../../public/assets/logo/Aether.png') repeat;
-    opacity: 0.008;
+    opacity: 0.017;
     animation: floatingBg 60s linear infinite;
 }
 
@@ -48,6 +49,7 @@ body {
     from {
         transform: translate(0, 0);
     }
+
     to {
         transform: translate(-50%, -50%);
     }
@@ -120,6 +122,7 @@ header {
     padding: 2rem;
     position: relative;
 }
+
 .welcome {
     position: relative;
     display: flex;
@@ -182,9 +185,11 @@ header {
     opacity: 0.9;
     letter-spacing: 0.5px;
 }
-.welcome .os-icons{
+
+.welcome .os-icons {
     display: inline-block;
 }
+
 .welcome .os-icons img#win,
 .welcome .os-icons img#lnx,
 .welcome .os-icons img#mac {
@@ -198,11 +203,13 @@ header {
     transition: .6s;
 }
 
-.welcome img#win:hover, .welcome img#lnx:hover, .welcome img#mac:hover{
+.welcome img#win:hover,
+.welcome img#lnx:hover,
+.welcome img#mac:hover {
     opacity: 0.6 !important;
 }
 
-img#scroll{
+img#scroll {
     position: absolute;
     width: 50px;
     left: 50%;
@@ -307,20 +314,23 @@ img#scroll{
     top: var(--y);
     left: var(--x);
     transform: translate(-50%, -50%);
-    background: radial-gradient(var(--clr), transparent,transparent,transparent);
+    background: radial-gradient(var(--clr), transparent, transparent, transparent);
     width: 400px;
     height: 400px;
     opacity: 0;
-    transition: .5s ease, top 0s, left 0s;;
+    transition: .5s ease, top 0s, left 0s;
+    ;
 }
 
-.feature-grid .card:hover::before{
+.feature-grid .card:hover::before {
     opacity: 1;
 }
-.feature-grid .card::after{
+
+.feature-grid .card::after {
     content: ' ';
     position: absolute;
-    inset: 3px;;
+    inset: 3px;
+    ;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.282);
 }
@@ -388,7 +398,7 @@ img#scroll{
     top: var(--y);
     left: var(--x);
     transform: translate(-50%, -50%);
-    background: radial-gradient(var(--clr), transparent,transparent,transparent);
+    background: radial-gradient(var(--clr), transparent, transparent, transparent);
     width: 400px;
     height: 400px;
     opacity: 0;
@@ -402,14 +412,17 @@ img#scroll{
 .card::after {
     content: ' ';
     position: absolute;
-    inset: 3px;;
+    inset: 3px;
+    ;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.282);
 }
-.card img#w{
-    filter:grayscale(100%);
-    filter:saturate(0)
+
+.card img#w {
+    filter: grayscale(100%);
+    filter: saturate(0)
 }
+
 .card img {
     filter: invert(1);
     width: 64px;
@@ -503,7 +516,7 @@ img#scroll{
     top: var(--y);
     left: var(--x);
     transform: translate(-50%, -50%);
-    background: radial-gradient(var(--clr), transparent,transparent,transparent);
+    background: radial-gradient(var(--clr), transparent, transparent, transparent);
     width: 400px;
     height: 400px;
     opacity: 0;
@@ -517,10 +530,12 @@ img#scroll{
 .download-grid .card::after {
     content: ' ';
     position: absolute;
-    inset: 3px;;
+    inset: 3px;
+    ;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.282);
 }
+
 .download-grid .card img {
     filter: invert(0);
     width: 64px;
@@ -529,12 +544,14 @@ img#scroll{
     position: relative;
     z-index: 1;
 }
+
 .download-info {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .download-info a {
     color: #fff8dce6;
     font-size: 1rem;
@@ -545,9 +562,11 @@ img#scroll{
     text-decoration-color: #92ffdb51;
     transition: color 0.3s ease;
 }
+
 .download-info a:hover {
     color: #ffffff8c;
 }
+
 .download-info .space {
     margin-bottom: 40px;
     width: 100%;
@@ -609,7 +628,7 @@ footer {
         gap: 1.5rem;
         text-align: center;
     }
-    
+
     .footer-right {
         margin-top: 1rem;
     }

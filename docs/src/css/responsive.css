@@ -1,55 +1,86 @@
-
 /* Medium Mobile (480px and up) */
 @media screen and (max-width: 480px) {
     .logo img {
         width: 150px;
         height: auto;
     }
+
     .nav-links {
         gap: 1.5rem;
     }
+
     .nav-links a {
         font-size: 11px;
-        gap: 2  ;
+        gap: 2;
     }
+
     .welcome h1 {
         font-size: 40px;
     }
-    .welcome img#brush{
+
+    .welcome img#brush {
         width: 180px;
         left: 25%;
         top: -30px;
+        display: none;
     }
-    .welcome p{
+
+    .welcome p {
         font-size: 1.2rem;
-        margin-top: 40px;
+        margin-top: 100px;
     }
+
     .welcome img#line {
         width: 60px;
         left: -90px;
+        display: none;
     }
+
     .githubcorner {
         width: 200px;
         height: 30px;
     }
-    .githubcorner p{
+
+    .githubcorner p {
         font-size: 15px;
         margin: 60px 0 0 -20px;
     }
-    .githubcorner img{
+
+    .githubcorner img {
         width: 20px;
         margin: -10px 0 0 120px;
     }
-    img#scroll{
-        top:80%;
+
+    img#scroll {
+        top: 80%;
     }
 }
+
 /* Tablet (768px and up) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .welcome h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
+
+    .welcome p#title {
+        margin-top: 100px;
+    }
+
+    .welcome img#line,
+    .welcome img#brush {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+    .welcome img#brush {
+        width: 220px;
+        margin: 20px;
+        left: 300px
+    }
+
     .welcome img#line {
-        left: -10px;
+        width: 80px;
+        left: -120px;
     }
 }
