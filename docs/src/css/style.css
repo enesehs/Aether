@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Mona Sans Expanded';
-    src: url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff2') format('woff2'),
-        url('/docs/public/assets/fonts/MonaSansExpanded-Regular.woff') format('woff'),
-        url('/docs/public/assets/fonts/MonaSansExpanded-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans+Expanded:wght@400;700&display=swap');
 
 /* Global Styles */
 * {
