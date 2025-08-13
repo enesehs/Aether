@@ -10,12 +10,12 @@
     }
 
     .nav-links a {
-        font-size: 11px;
-        gap: 2;
+        font-size: 12px;
+        gap: 1rem;
     }
 
     .welcome h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .welcome img#brush {
@@ -76,7 +76,7 @@
     .welcome img#brush {
         width: 220px;
         margin: 20px;
-        left: 300px
+        left: 300px;
     }
 
     .welcome img#line {

@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Mona+Sans+Expanded:wght@400;700&display=swap');
+/* Font Faces */
+@font-face {
+    font-family: 'MonaSansExpanded';
+    src: url('../../public/assets/fonts/MonaSansExpanded-Regular.woff2') format('woff2'),
+         url('../../public/assets/fonts/MonaSansExpanded-Regular.woff') format('woff'),
+         url('../../public/assets/fonts/MonaSansExpanded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fallback Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mona Sans Expanded', sans-serif;
+    font-family: 'MonaSansExpanded', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     color: #ffffff;
     position: relative;
-    height: 180vh;
+    min-height: 100vh;
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 .background-elements {
@@ -37,6 +50,7 @@ body {
     opacity: 0.017;
     animation: floatingBg 60s linear infinite;
     pointer-events: none;
+    will-change: transform;
 }
 
 @keyframes floatingBg {
@@ -69,6 +83,7 @@ header {
     width: 250px;
     height: auto;
     transition: transform 0.3s ease;
+    will-change: transform;
 }
 
 .nav-links {
@@ -128,12 +143,13 @@ header {
 .welcome h1 {
     width: 100%;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
     text-align: center;
     margin-top: clamp(5rem, 10vw, 10rem);
     cursor: default;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     z-index: 0;
-
+    letter-spacing: -0.02em;
 }
 
 .welcome img#brush {
@@ -153,10 +169,12 @@ header {
     top: -90px;
     width: 100%;
     font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 400;
     text-align: center;
     cursor: default;
-    line-height: 1.4;
+    line-height: 1.6;
     z-index: 0;
+    letter-spacing: 0.01em;
 }
 
 .welcome img#line {
@@ -280,8 +298,10 @@ img#scroll {
 
 .features h2 {
     font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 50px;
     color: #fff;
+    letter-spacing: -0.02em;
 }
 
 .feature-grid {
@@ -303,7 +323,7 @@ img#scroll {
 }
 
 .feature-grid .card::before {
-    content: ' ';
+    content: '';
     position: absolute;
     top: var(--y);
     left: var(--x);
@@ -312,8 +332,7 @@ img#scroll {
     width: 400px;
     height: 400px;
     opacity: 0;
-    transition: .5s ease, top 0s, left 0s;
-    ;
+    transition: 0.6s ease, top 0s, left 0s;
 }
 
 .feature-grid .card:hover::before {
@@ -321,10 +340,9 @@ img#scroll {
 }
 
 .feature-grid .card::after {
-    content: ' ';
+    content: '';
     position: absolute;
     inset: 3px;
-    ;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.282);
 }
@@ -339,14 +357,17 @@ img#scroll {
 .feature-grid .card h3 {
     color: #fff;
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 15px;
     cursor: default;
+    letter-spacing: -0.01em;
 }
 
 .feature-grid .card p {
     color: #ccc;
     font-size: 1rem;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.6;
     cursor: default;
 }
 
@@ -364,8 +385,10 @@ img#scroll {
 
 .Support h2 {
     font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 50px;
     color: #fff;
+    letter-spacing: -0.02em;
 }
 
 .support-grid {
@@ -387,7 +410,7 @@ img#scroll {
 }
 
 .card::before {
-    content: ' ';
+    content: '';
     position: absolute;
     top: var(--y);
     left: var(--x);
@@ -414,7 +437,6 @@ img#scroll {
 
 .card img#w {
     filter: grayscale(100%);
-    filter: saturate(0)
 }
 
 .card img {
@@ -429,16 +451,19 @@ img#scroll {
 .card h3 {
     color: #fff;
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 15px;
     position: relative;
     z-index: 1;
     cursor: default;
+    letter-spacing: -0.01em;
 }
 
 .card p {
     color: #ccc;
     font-size: 1rem;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.6;
     position: relative;
     z-index: 1;
     cursor: default;
@@ -483,8 +508,10 @@ img#scroll {
 
 .Download h2 {
     font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 50px;
     color: #fff;
+    letter-spacing: -0.02em;
 }
 
 .download-grid {
@@ -505,7 +532,7 @@ img#scroll {
 }
 
 .download-grid .card::before {
-    content: ' ';
+    content: '';
     position: absolute;
     top: var(--y);
     left: var(--x);
@@ -514,7 +541,7 @@ img#scroll {
     width: 400px;
     height: 400px;
     opacity: 0;
-    transition: .5s ease, top 0s, left 0s;
+    transition: 0.5s ease, top 0s, left 0s;
 }
 
 .download-grid .card:hover::before {
@@ -522,10 +549,9 @@ img#scroll {
 }
 
 .download-grid .card::after {
-    content: ' ';
+    content: '';
     position: absolute;
     inset: 3px;
-    ;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.282);
 }
