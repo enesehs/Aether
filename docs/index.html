@@ -8,6 +8,40 @@
 86868686 86    86 86868686  868686  86868686 86     86  868686               01:11 10.01.2025 :)
 -->
 
+    <link rel="canonical" href="https://enesehs.github.io/Aether/">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Aether",
+        "description": "Privacy-focused webcam security application that automatically captures photos on login and stores them locally with strong encryption.",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": ["Windows", "Linux", "macOS"],
+        "author": {
+            "@type": "Person",
+            "name": "enesehs",
+            "url": "https://enesehs.dev"
+        },
+        "downloadUrl": "https://github.com/enesehs/Aether/releases",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "screenshot": "https://enesehs.github.io/Aether/public/assets/logo/logo.png"
+    }
+    </script>
+    <link rel="preload" href="src/css/style.css" as="style">
+    <link rel="preload" href="public/assets/fonts/MonaSansExpanded-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="public/assets/logo/logo.png" as="image">
+    <link rel="preload" href="src/js/script.js" as="script">
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//buymeacoffee.com">
+    <link rel="dns-prefetch" href="//linkedin.com">
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,20 +49,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="src/css/style.css" as="style">
+    <link rel="preload" href="public/assets/fonts/MonaSansExpanded-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="public/assets/logo/logo.png" as="image">
+    
     <!-- Primary Meta Tags -->
     <meta name="title" content="Aether - Your Digital Webcam Sentinel">
-    <meta name="description"
-        content="Aether is a privacy-focused webcam security application that automatically captures photos on login and stores them locally with strong encryption.">
-    <meta name="keywords"
-        content="Aether, Webcam Security, Privacy, Security Software, Encryption, Open Source, Desktop Security, Login Security, Privacy Tool, Webcam Monitor, Local Storage, Data Protection, Secure Photography, Camera Security, Windows Security, Linux Security, macOS Security, User Privacy, Digital Security, Surveillance Tool, Privacy Software, Computer Security, Webcam Protection, Security Application, Personal Security">
+    <meta name="description" content="Aether is a privacy-focused webcam security application that automatically captures photos on login and stores them locally with strong encryption.">
+    <meta name="keywords" content="Aether, Webcam Security, Privacy, Security Software, Encryption, Open Source, Desktop Security, Login Security, Privacy Tool, Webcam Monitor, Local Storage, Data Protection, Secure Photography, Camera Security, Windows Security, Linux Security, macOS Security, User Privacy, Digital Security, Surveillance Tool, Privacy Software, Computer Security, Webcam Protection, Security Application, Personal Security">
     <meta name="author" content="enesehs">
-
+    <meta name="language" content="English">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://enesehs.github.io/Aether/">
     <meta property="og:title" content="Aether - Your Digital Webcam Sentinel">
-    <meta property="og:description"
-        content="Secure your privacy with Aether - A lightweight, open-source webcam security solution with local storage and strong encryption.">
+    <meta property="og:description" content="Secure your privacy with Aether - A lightweight, open-source webcam security solution with local storage and strong encryption.">
     <meta property="og:image" content="https://enesehs.github.io/Aether/public/assets/logo/logo.png">
     <meta property="og:site_name" content="Aether">
 
@@ -36,25 +75,23 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://enesehs.github.io/Aether/">
     <meta property="twitter:title" content="Aether - Your Digital Webcam Sentinel">
-    <meta property="twitter:description"
-        content="Secure your privacy with Aether - A lightweight, open-source webcam security solution with local storage and strong encryption.">
+    <meta property="twitter:description" content="Secure your privacy with Aether - A lightweight, open-source webcam security solution with local storage and strong encryption.">
     <meta property="twitter:image" content="https://enesehs.github.io/Aether/public/assets/logo/logo.png">
 
     <!-- SEO -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://enesehs.github.io/Aether/">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    <meta name="google" content="nositelinkssearchbox">
-
-
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsive.css">
+    
+    <!-- Page Title and Favicon -->
     <title>Aether - Your Digital Webcam Sentinel</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    
+    <!-- Font Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -91,7 +128,7 @@
         <img id="scroll" src="public/assets/img/drag.gif" draggable="false" alt="Scroll down indicator">
 
         <a href="https://github.com/enesehs/aether" class="githubcorner" aria-label="Visit GitHub Repository">
-            <img src="public/assets/icons/github.svg" draggable="false" alt="">
+            <img src="public/assets/icons/github.svg" draggable="false" alt="GitHub logo">
             <p>Visit on Github</p>
         </a>
     </section>
@@ -100,42 +137,42 @@
         <h2 id="features-heading">Privacy-First Security</h2>
         <div class="feature-grid" role="list">
             <div class="card" style="--clr:#ff474769;" role="listitem">
-                <img src="public/assets/icons/camera.svg" draggable="false" alt="">
+                <img src="public/assets/icons/camera.svg" draggable="false" alt="Camera icon">
                 <h3>Secure Capture</h3>
                 <p>Automatic photo capture on login, stored locally</p>
             </div>
             <div class="card" style="--clr:#4affab69;" role="listitem">
-                <img src="public/assets/icons/encryption.svg" draggable="false" alt="">
+                <img src="public/assets/icons/encryption.svg" draggable="false" alt="Encryption icon">
                 <h3>Encryption</h3>
                 <p>Strong encryption for stored data</p>
             </div>
             <div class="card" style="--clr:#4b4bff69;" role="listitem">
-                <img src="public/assets/icons/privacy.svg" draggable="false" alt="">
+                <img src="public/assets/icons/privacy.svg" draggable="false" alt="Privacy shield icon">
                 <h3>100% Private</h3>
                 <p>No servers, no data transmission, fully local</p>
             </div>
             <div class="card" style="--clr:#ffc25069;" role="listitem">
-                <img src="public/assets/icons/settings.svg" draggable="false" alt="">
+                <img src="public/assets/icons/settings.svg" draggable="false" alt="Settings gear icon">
                 <h3>Customizable</h3>
                 <p>Fully configurable privacy settings</p>
             </div>
             <div class="card" style="--clr:#4fffff69;" role="listitem">
-                <img src="public/assets/icons/github.svg" draggable="false" alt="">
+                <img src="public/assets/icons/github.svg" draggable="false" alt="GitHub icon">
                 <h3>Open Source</h3>
                 <p>Transparent, community-driven development</p>
             </div>
             <div class="card" style="--clr:#62ff6269;" role="listitem">
-                <img src="public/assets/icons/lightweight.svg" draggable="false" alt="">
+                <img src="public/assets/icons/lightweight.svg" draggable="false" alt="Feather icon representing lightweight">
                 <h3>Lightweight</h3>
                 <p>Minimal system resource usage</p>
             </div>
             <div class="card" style="--clr:#4ea7ff69;" role="listitem">
-                <img src="public/assets/icons/user.svg" draggable="false" alt="">
+                <img src="public/assets/icons/user.svg" draggable="false" alt="User icon">
                 <h3>User Friendly</h3>
                 <p>Clean and intuitive interface</p>
             </div>
             <div class="card" style="--clr:#ffca4569;" role="listitem">
-                <img src="public/assets/icons/log.svg" draggable="false" alt="">
+                <img src="public/assets/icons/log.svg" draggable="false" alt="Log file icon">
                 <h3>Advanced Logging</h3>
                 <p>Detailed activity tracking and history</p>
             </div>
@@ -167,8 +204,8 @@
             <div class="card" style="--clr:#9950ff69;">
                 <img id="w" src="public/assets/icons/website.ico" draggable="false" alt="Personal Website">
                 <h3>My Website</h3>
-                <p>Visit enesehs.me</p>
-                <a href="https://enesehs.me" class="support-btn">Visit</a>
+                <p>Visit enesehs.dev</p>
+                <a href="https://enesehs.dev" class="support-btn">Visit</a>
             </div>
         </div>
     </section>
@@ -195,7 +232,7 @@
                 <h1 style="color: #ffffff; text-shadow: 0 0 10px #fff;">Coming Soon</h1>
             </div>
             <div class="card" style="--clr:#ff97e369;">
-                <img src="public/assets/icons/mac.png" alt="macOS">
+                <img src="public/assets/icons/mac.png" draggable="false" alt="macOS">
                 <h3>macOS</h3>
                 <p>For macOS 10.15 and above</p>
                 <br>
@@ -216,93 +253,19 @@
                 <p>Made with ❤️ for privacy</p>
             </div>
             <div class="footer-right">
-                <a href="https://enesehs.me" title="enesehs">Portfolio</a>
+                <a href="https://enesehs.dev" title="enesehs">Portfolio</a>
                 <a href="https://buymeacoffee.com/enesehs" title="Buy Me A Coffee">Support</a>
                 <a href="https://github.com/enesehs" title="github">Github</a>
             </div>
         </div>
     </footer>
 </body>
-<script src="src/js/script.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
+<script src="src/js/script.js" defer></script>
+<script src="https://unpkg.com/scrollreveal" defer></script>
 <script>
-    const revealOptions = {
-        distance: '50px',
-        duration: 1500,
-        easing: 'cubic-bezier(0.5, 0, 0, 1)',
-        reset: false,
-        viewFactor: 0.2
-    };
-    ScrollReveal().reveal('.welcome h1, #brush', {
-        ...revealOptions,
-        origin: 'left',
-        delay: 200,
-        scale: 0.85,
-        opacity: 0
-    });
-    ScrollReveal().reveal('.welcome #title, #line', {
-        ...revealOptions,
-        origin: 'right',
-        delay: 500,
-    });
-    ScrollReveal().reveal('.welcome .dw', {
-        ...revealOptions,
-        origin: 'bottom',
-        delay: 700,
-        interval: 200
-    });
-    ScrollReveal().reveal('.icons .os-icons', {
-        ...revealOptions,
-        origin: 'right',
-        delay: 1000,
-        interval: 200,
-    });
-    ScrollReveal().reveal('.githubcorner', {
-        ...revealOptions,
-        origin: 'left',
-        delay: 200,
-        interval: 200,
-        distance: '200px',
-    });
-    ScrollReveal().reveal('.welcome #scroll', {
-        ...revealOptions,
-        origin: 'bottom',
-        delay: 3300,
-    });
+(function(){const a={distance:'50px',duration:1500,easing:'cubic-bezier(0.5,0,0,1)',reset:!1,viewFactor:.2};document.addEventListener('DOMContentLoaded',function(){ScrollReveal().reveal('.welcome h1, #brush',{...a,origin:'left',delay:200,scale:.85,opacity:0});ScrollReveal().reveal('.welcome #title, #line',{...a,origin:'right',delay:500});ScrollReveal().reveal('.welcome .dw',{...a,origin:'bottom',delay:700,interval:200});ScrollReveal().reveal('.icons .os-icons',{...a,origin:'right',delay:1000,interval:200});ScrollReveal().reveal('.githubcorner',{...a,origin:'left',delay:200,interval:200,distance:'200px'});ScrollReveal().reveal('.welcome #scroll',{...a,origin:'bottom',delay:3300});ScrollReveal().reveal('.features h2',{...a,origin:'left'});ScrollReveal().reveal('.feature-grid .card',{...a,origin:'bottom',interval:200});ScrollReveal().reveal('.Support h2',{...a,origin:'left'});ScrollReveal().reveal('.Support .card',{...a,origin:'right',delay:300,interval:200,opacity:0});ScrollReveal().reveal('.Download h2',{...a,origin:'left'});ScrollReveal().reveal('.Download .card',{...a,origin:'bottom',delay:400,interval:300,distance:'100px',scale:.4,opacity:0})})})();
 
-    ScrollReveal().reveal('.features h2', {
-        ...revealOptions,
-        origin: 'left'
-    });
-    ScrollReveal().reveal('.feature-grid .card', {
-        ...revealOptions,
-        origin: 'bottom',
-        interval: 200
-    });
-    ScrollReveal().reveal('.Support h2', {
-        ...revealOptions,
-        origin: 'left'
-    });
-    ScrollReveal().reveal('.Support .card', {
-        ...revealOptions,
-        origin: 'right',
-        delay: 300,
-        interval: 200,
-        opacity: 0
-    });
-    ScrollReveal().reveal('.Download h2', {
-        ...revealOptions,
-        origin: 'left'
-    });
-    ScrollReveal().reveal('.Download .card', {
-        ...revealOptions,
-        origin: 'bottom',
-        delay: 400,
-        interval: 300,
-        distance: '100px',
-        scale: 0.4,
-        opacity: 0
-    });
+// Register service worker for caching
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(e=>console.log('SW registration failed'));}
 </script>
-
 </html>

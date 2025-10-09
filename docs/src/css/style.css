@@ -9,15 +9,12 @@
     font-display: swap;
 }
 
-/* Fallback Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'MonaSansExpanded', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'MonaSansExpanded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     scroll-behavior: smooth;
 }
 

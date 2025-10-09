@@ -1,4 +1,6 @@
-/* Medium Mobile (480px and up) */
+/* Performance optimized responsive styles */
+
+/* Mobile devices (up to 480px) */
 @media screen and (max-width: 480px) {
     .logo img {
         width: 150px;
@@ -18,22 +20,14 @@
         font-size: 2.5rem;
     }
 
-    .welcome img#brush {
-        width: 180px;
-        left: 25%;
-        top: -30px;
+    .welcome img#brush,
+    .welcome img#line {
         display: none;
     }
 
     .welcome p {
         font-size: 1.2rem;
         margin-top: 100px;
-    }
-
-    .welcome img#line {
-        width: 60px;
-        left: -90px;
-        display: none;
     }
 
     .githubcorner {
@@ -56,7 +50,7 @@
     }
 }
 
-/* Tablet (768px and up) */
+/* Tablet devices (481px to 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .welcome h1 {
         font-size: 3.5rem;
@@ -72,6 +66,7 @@
     }
 }
 
+/* Large tablet/small desktop (769px to 900px) */
 @media screen and (min-width: 769px) and (max-width: 900px) {
     .welcome img#brush {
         width: 220px;
@@ -82,5 +77,17 @@
     .welcome img#line {
         width: 80px;
         left: -120px;
+    }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

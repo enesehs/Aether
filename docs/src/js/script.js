@@ -1,33 +1,54 @@
-// Handle header visibility on scroll
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    const githubCorner = document.querySelector(".githubcorner");
-    const isHidden = window.scrollY > 550;
+// Optimized scroll handler - combine multiple scroll listeners for better performance
+let ticking = false;
+const header = document.querySelector("header");
+const githubCorner = document.querySelector(".githubcorner");
+const scrollImg = document.getElementById("scroll");
+
+function updateScroll() {
+    const scrollY = window.scrollY;
+    const isHidden = scrollY > 550;
     
-    header.style.opacity = isHidden ? "0" : "1";
-    header.style.pointerEvents = isHidden ? "none" : "all";
+    // Handle header and github corner visibility
+    if (header) {
+        header.style.opacity = isHidden ? "0" : "1";
+        header.style.pointerEvents = isHidden ? "none" : "all";
+    }
     
     if (githubCorner) {
         githubCorner.style.opacity = isHidden ? "0" : "1";
         githubCorner.style.pointerEvents = isHidden ? "none" : "all";
     }
-});
-
-// Handle scroll image visibility
-window.addEventListener("scroll", () => {
-    const scrollImg = document.getElementById("scroll");
+    
+    // Handle scroll image visibility
     if (scrollImg) {
         scrollImg.style.transition = "opacity 0.3s ease";
-        scrollImg.style.opacity = window.scrollY > 2 ? "0" : "1";
+        scrollImg.style.opacity = scrollY > 2 ? "0" : "1";
+    }
+    
+    ticking = false;
+}
+
+window.addEventListener("scroll", () => {
+    if (!ticking) {
+        requestAnimationFrame(updateScroll);
+        ticking = true;
     }
 });
 
-// Card hover effect
-document.querySelectorAll('.card').forEach(card => {
-    card.onmousemove = e => {
-        card.style.setProperty('--x', `${e.pageX - card.offsetLeft}px`);
-        card.style.setProperty('--y', `${e.pageY - card.offsetTop}px`);
-    };
+// Optimized card hover effect with throttling
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+    let throttleTimer = null;
+    card.addEventListener('mousemove', e => {
+        if (!throttleTimer) {
+            throttleTimer = setTimeout(() => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                card.style.setProperty('--y', `${e.clientY - rect.top}px`);
+                throttleTimer = null;
+            }, 16); // ~60fps
+        }
+    });
 });
 
 // Extra-cool heart and confetti animation for Support link
